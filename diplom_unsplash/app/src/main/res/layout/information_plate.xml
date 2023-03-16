@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mainContainerTranslucent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/informationPlate_textView_userName"
+        style="@style/smallText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/informationPlate_textView_name"
+        app:layout_constraintStart_toStartOf="@+id/informationPlate_textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/informationPlate_textView_name"
+        tools:text="\@mailchimp" />
+
+    <TextView
+        android:id="@+id/informationPlate_textView_name"
+        style="@style/smallTextHighlighted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/informationPlate_textView_likesNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/informationPlate_imageView_authorAvatar"
+        app:layout_constraintTop_toTopOf="@+id/informationPlate_imageView_authorAvatar"
+        tools:text="Bjorn Pierre" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/informationPlate_imageView_authorAvatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/informationPlate_imageView_like"
+        style="@style/icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_like_border" />
+
+    <TextView
+        android:id="@+id/informationPlate_textView_likesNumber"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/informationPlate_imageView_like"
+        app:layout_constraintEnd_toStartOf="@+id/informationPlate_imageView_like"
+        app:layout_constraintTop_toTopOf="@+id/informationPlate_imageView_like"
+        tools:text="236" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/informationPlate_group_like"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:constraint_referenced_ids="informationPlate_textView_likesNumber,informationPlate_imageView_like"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/informationPlate_group_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="informationPlate_imageView_authorAvatar,informationPlate_textView_userName,informationPlate_textView_name"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

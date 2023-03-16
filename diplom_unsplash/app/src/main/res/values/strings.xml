@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name" translatable="false">Unsplash</string>
+    <string name="fragLog_button_log">Войти через Unsplash</string>
+    <!-- fragPresentation -->
+    <string name="fragPresentation_hello">Привет</string>
+    <string name="fragPresentation_text1">Создавайте снимки, публикуйте, собирайте аудиторию, получайте фидбек</string>
+    <string name="fragPresentation_text2">Делитесь с друзьями, собирайте коллекции</string>
+    <string name="fragPresentation_text3">Загружайте любимые снимки и отслеживайте статистику</string>
+    <!-- fragPhotoDetails -->
+    <string name="fragPhotoDetails_madeWith">Создано с: %s</string>
+    <string name="fragPhotoDetails_model">Модель: %s</string>
+    <string name="fragPhotoDetails_exposure">Экспозиция: %s</string>
+    <string name="fragPhotoDetails_aperture">Диафрагма: %s</string>
+    <string name="fragPhotoDetails_focalLength">Фокусное расстояние: %s</string>
+    <string name="fragPhotoDetails_iso" translatable="false">ISO: %s</string>
+    <string name="fragPhotoDetails_download">&lt;u>Скачать&lt;/u> (%s)</string>
+    <string name="fragPhotoDetails_description">Описание: %s</string>
+    <string name="fragPhotoDetails_notSpecified">не указано</string>
+    <string name="fragPhotoDetails_imageNotFound">Фото не найдено</string>
+    <!-- fragProfile -->
+    <string name="fragProfile_favoritesTab">%s%nпонравилось</string>
+    <string name="fragProfile_collectionsTab">%s%nколлекции</string>
+    <string name="fragProfile_noItems">Пусто</string>
+    <string name="fragProfile_photosTab">%s%nфотографии</string>
+    <!-- collectionHolder -->
+    <string name="collectionHolder_photosNumber">%s фотографий</string>
+    <!-- exitDialog -->
+    <string name="exitDialog_title">Выход</string>
+    <string name="exitDialog_message">Выйти из аккаунта?</string>
+    <!-- pages -->
+    <string name="page_home">Главная</string>
+    <string name="page_collections">Коллекции</string>
+    <string name="page_profile">Профиль</string>
+    <string name="page_photoDetails">Фото</string>
+    <!-- menuToolbar -->
+    <string name="menuToolbar_exit">Выйти</string>
+    <string name="menuToolbar_share">Поделиться</string>
+    <string name="menuToolbar_download">Скачать</string>
+    <string name="menuToolbar_search">Найти</string>
+    <!-- notifications -->
+    <string name="notification_noConnection">Ошибка сети: проверьте подкючение</string>
+    <string name="notification_photoIsAlreadyBeingDownloaded">Фото уже было поставлено на загрузку</string>
+    <string name="notification_photoWasDownloaded">Фото сохранено</string>
+    <string name="notification_photoDownloadFailed">Не удалось загрузить фото</string>
+    <string name="notification_openPhotoIn">Открыть в</string>
+    <string name="notification_downloadWillContinueLater">Ошибка сети: загрузка продолжится позже</string>
+    <string name="notification_failedLogin">Не удалось войти в аккаунт</string>
+    <string name="notification_loadFailure">Упс, что-то не так</string>
+    <!-- Simple words -->
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ok" translatable="false">ОК</string>
+    <string name="cancel">Отмена</string>
+    <!-- repositories -->
+    <string name="repository_shareUrl" translatable="false">https://unsplash.com/photos/%s</string>
+    <string name="repository_shareTitle">Отправить в</string>
+    <string name="repository_openPhotoIn">Открыть в</string>
+</resources>

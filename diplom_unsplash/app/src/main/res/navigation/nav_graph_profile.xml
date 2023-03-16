@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_profile"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myunsplash.fragments.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/frag_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_listCollectionPhotos"
+            app:destination="@id/listCollectionPhotos" />
+        <action
+            android:id="@+id/action_profileFragment_to_photoDetailsFragment"
+            app:destination="@id/photoDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoDetailsFragment"
+        android:name="com.example.myunsplash.fragments.photo_details.PhotoDetailsFragment"
+        android:label="PhotoDetailsFragment"
+        tools:layout="@layout/frag_photo_details">
+        <argument
+            android:name="photoId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listCollectionPhotos"
+        android:name="com.example.myunsplash.fragments.list_collections_photo.ListCollectionPhotos"
+        android:label="ListCollectionPhotos"
+        tools:layout="@layout/frag_list_collection_photos">
+        <argument
+            android:name="collectionId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_listCollectionPhotos_to_photoDetailsFragment"
+            app:destination="@id/photoDetailsFragment" />
+    </fragment>
+</navigation>

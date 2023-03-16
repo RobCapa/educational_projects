@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:id="@+id/menuToolbar_group_all">
+        <item
+            android:id="@+id/menuToolbar_search"
+            style="@style/toolbarItem"
+            android:title="@string/menuToolbar_search"
+            android:visibility="gone"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            tools:visibility="visible" />
+
+        <item
+            android:id="@+id/menuToolbar_exit"
+            style="@style/toolbarItem"
+            android:icon="@drawable/ic_baseline_exit_to_app"
+            android:title="@string/menuToolbar_exit"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <item
+            android:id="@+id/menuToolbar_share"
+            style="@style/toolbarItem"
+            android:icon="@drawable/ic_baseline_ios_share"
+            android:title="@string/menuToolbar_share"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <item
+            android:id="@+id/menuToolbar_download"
+            style="@style/toolbarItem"
+            android:icon="@drawable/ic_baseline_download"
+            android:title="@string/menuToolbar_download"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </group>
+</menu>

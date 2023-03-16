@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/mainBackgroundColor">
+
+        <include
+            android:id="@+id/fragProfile_include_toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_scrollFlags="scroll|snap|enterAlways">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragProfile_imageView_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_name"
+                style="@style/largeTextHighlighted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.417"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_avatar"
+                app:layout_constraintTop_toTopOf="@+id/fragProfile_imageView_avatar"
+                tools:text="Alex Victor" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_userName"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_name"
+                tools:text="\@alexosso" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_bio"
+                style="@style/mediumTextHighlighted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_userName"
+                tools:text="Bio Bio Bio Bio"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_location"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/fragProfile_imageView_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_location"
+                app:layout_constraintTop_toTopOf="@+id/fragProfile_imageView_location"
+                tools:text="San Franc, CA"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_email"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/fragProfile_imageView_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_email"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_location"
+                tools:text="alexosso\@gmail.com"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/fragProfile_imageView_location"
+                style="@style/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_bio"
+                app:srcCompat="@drawable/ic_baseline_location"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/fragProfile_imageView_email"
+                style="@style/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_location"
+                app:srcCompat="@drawable/ic_baseline_email"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/fragProfile_imageView_download"
+                style="@style/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_email"
+                app:srcCompat="@drawable/ic_baseline_download"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_downloads"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/fragProfile_imageView_download"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_download"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_email"
+                tools:text="45" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/fragProfile_linearLayout_navMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AppBarLayout">
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/fragProfile_group_menuTabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="fragProfile_textView_collectionsTab,fragProfile_textView_photosTab,fragProfile_textView_favoritesTab" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_photosTab"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="123\nphotos" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_favoritesTab"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="1442\nfavorites" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_collectionsTab"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="3\ncollections" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <TextView
+            android:id="@+id/fragProfile_textView_noItems"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/fragProfile_noItems"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/fragProfile_swipeRefreshLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragProfile_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_photo" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

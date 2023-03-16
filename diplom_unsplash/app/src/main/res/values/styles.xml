@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="mainContainer">
+        <item name="android:background">?attr/mainBackgroundColor</item>
+    </style>
+
+    <style name="mainContainerTranslucent">
+        <item name="android:background">?attr/mainBackgroundAlphaColor</item>
+    </style>
+
+    <style name="icon">
+        <item name="tint">?attr/mainTextColor</item>
+        <item name="android:tint" tools:targetApi="o">?attr/mainTextColor</item>
+    </style>
+
+    <!-- Toolbar -->
+
+    <style name="AppTheme.Toolbar" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:background">?attr/accentColor</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="toolbarItem">
+        <item name="iconTint">@color/white</item>
+        <item name="android:iconTint" tools:targetApi="o">@color/white</item>
+        <item name="showAsAction">ifRoom</item>
+    </style>
+
+    <style name="toolbarOverflowButton" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <!-- Texts -->
+
+    <style name="basicText">
+        <item name="android:textColor">?attr/mainTextColor</item>
+    </style>
+
+    <style name="smallText" parent="basicText">
+        <item name="android:textSize">?attr/smallTextSize</item>
+    </style>
+
+    <style name="smallTextHighlighted" parent="smallText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mediumText" parent="basicText">
+        <item name="android:textSize">?attr/mediumTextSize</item>
+    </style>
+
+    <style name="mediumTextHighlighted" parent="mediumText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mediumTextHighlightedTitle" parent="mediumText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="largeText" parent="basicText">
+        <item name="android:textSize">?attr/largeTextSize</item>
+    </style>
+
+    <style name="largeTextHighlighted" parent="largeText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="largeTextHighlightedTitle" parent="largeText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="hugeText" parent="basicText">
+        <item name="android:textSize">?attr/hugeTextSize</item>
+    </style>
+
+    <!-- Buttons -->
+
+    <style name="neutralButton">
+        <item name="android:backgroundTint">?attr/neutralButton_background_color</item>
+        <item name="android:textColor">?attr/altTextColor</item>
+    </style>
+
+    <style name="positiveButton">
+        <item name="android:backgroundTint">?attr/accentColor</item>
+        <item name="android:textColor">?attr/altTextColor</item>
+    </style>
+
+    <style name="floatButton">
+        <item name="android:backgroundTint">?attr/accentColor</item>
+        <item name="tint">@color/white</item>
+    </style>
+</resources>

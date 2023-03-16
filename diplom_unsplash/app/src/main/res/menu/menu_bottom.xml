@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_graph_photos"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="@string/page_home"/>
+
+    <item
+        android:id="@+id/nav_graph_collections"
+        android:icon="@drawable/ic_baseline_favorites"
+        android:title="@string/page_collections"/>
+
+    <item
+        android:id="@+id/nav_graph_profile"
+        android:icon="@drawable/ic_baseline_profile"
+        android:title="@string/page_profile"/>
+</menu>

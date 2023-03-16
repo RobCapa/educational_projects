@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragLog_button_log">Login with Unsplash</string>
+    <string name="fragPresentation_text1">Take pictures, post them, get followers and feedback</string>
+    <string name="fragPresentation_text2">Share with friends, create collections</string>
+    <string name="fragPresentation_text3">Upload your favorite photos and track statistics</string>
+    <string name="fragPhotoDetails_madeWith">Created with: %s</string>
+    <string name="fragPhotoDetails_model">Model: %s</string>
+    <string name="fragPhotoDetails_exposure">Exposition: %s</string>
+    <string name="fragPhotoDetails_aperture">Aperture: %s</string>
+    <string name="fragPhotoDetails_focalLength">Focal Length: %s</string>
+    <string name="fragPhotoDetails_download">&lt;u>Download&lt;/u> (%s)</string>
+    <string name="fragPhotoDetails_description">Description: %s</string>
+    <string name="fragPhotoDetails_notSpecified">"missing "</string>
+    <string name="fragPhotoDetails_imageNotFound">Photo not found</string>
+    <string name="fragProfile_photosTab">%s%nphotos</string>
+    <string name="fragProfile_favoritesTab">%s%nfavorites</string>
+    <string name="fragProfile_collectionsTab">%s%ncollections</string>
+    <string name="fragProfile_noItems">Empty</string>
+    <string name="collectionHolder_photosNumber">%s photos</string>
+    <string name="exitDialog_title">Logout</string>
+    <string name="exitDialog_message">Logout of your account?</string>
+    <string name="page_home">Home</string>
+    <string name="page_collections">Collections</string>
+    <string name="page_profile">Profile</string>
+    <string name="page_photoDetails">Photo</string>
+    <string name="menuToolbar_exit">Exit</string>
+    <string name="menuToolbar_share">Share</string>
+    <string name="menuToolbar_download">Download</string>
+    <string name="menuToolbar_search">Search</string>
+    <string name="notification_noConnection">Network error: check connection</string>
+    <string name="notification_photoIsAlreadyBeingDownloaded">Photo is already downloading</string>
+    <string name="notification_photoWasDownloaded">Photo saved</string>
+    <string name="notification_photoDownloadFailed">Failed to upload photo</string>
+    <string name="notification_openPhotoIn">Open</string>
+    <string name="notification_downloadWillContinueLater">Network Error: Download will continue later</string>
+    <string name="notification_failedLogin">Failed to login</string>
+    <string name="notification_loadFailure">Oops, something\'s wrong</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="repository_shareTitle">Send to</string>
+    <string name="fragPresentation_hello">Hello</string>
+    <string name="repository_openPhotoIn">Open in</string>
+</resources>

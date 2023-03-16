@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors -->
+    <attr name="mainBackgroundColor" format="color"/>
+    <attr name="mainBackgroundAlphaColor" format="color"/>
+    <attr name="accentColor" format="color"/>
+
+    <attr name="mainTextColor" format="color"/>
+    <attr name="altTextColor" format="color"/>
+
+    <attr name="neutralButton_background_color" format="color"/>
+
+    <!-- Dimensions -->
+    <attr name="smallTextSize" format="dimension"/>
+    <attr name="mediumTextSize" format="dimension"/>
+    <attr name="largeTextSize" format="dimension"/>
+    <attr name="hugeTextSize" format="dimension"/>
+    <attr name="mainBackgroundColorAlpha" format="float" />
+    <attr name="paddingPhotosInFeed" format="integer"/>
+</resources>
