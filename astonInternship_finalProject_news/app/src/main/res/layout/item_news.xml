@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/itemNews_imageView_cover"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemNews_imageView_sourceLogo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="@+id/itemNews_textView_description"
+        app:layout_constraintTop_toTopOf="@+id/itemNews_imageView_cover"
+        app:shapeAppearanceOverlay="@style/cornerSizeFiftyPercent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/itemNews_textView_sourceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black_1"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemNews_imageView_sourceLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemNews_imageView_sourceLogo"
+        app:layout_constraintTop_toTopOf="@+id/itemNews_imageView_sourceLogo"
+        tools:text="CNN" />
+
+    <TextView
+        android:id="@+id/itemNews_textView_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:lineHeight="20sp"
+        android:maxLines="2"
+        android:textColor="@color/black_1"
+        app:layout_constraintBottom_toBottomOf="@+id/itemNews_imageView_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemNews_imageView_cover"
+        app:layout_constraintTop_toBottomOf="@+id/itemNews_textView_sourceName"
+        tools:text="First Republic stocks drops nearly 50% after plunge in deposits" />
+</androidx.constraintlayout.widget.ConstraintLayout>

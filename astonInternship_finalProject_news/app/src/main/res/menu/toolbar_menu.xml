@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/menuToolbar_group_all">
+
+        <item
+            android:id="@+id/menuItem_not_saved"
+            android:enabled="true"
+            android:icon="@drawable/ic_bookmark_border"
+            android:title="@string/topMenu_not_saved"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/menuItem_saved"
+            android:enabled="true"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/topMenu_saved"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/menuItem_checkMark"
+            android:enabled="true"
+            android:icon="@drawable/ic_check_mark"
+            android:title="@string/topMenu_checkMark"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/menuItem_search"
+            android:enabled="true"
+            android:icon="@drawable/ic_search"
+            android:title="@string/topMenu_search"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/menuItem_filter"
+            android:enabled="true"
+            android:icon="@drawable/ic_filter"
+            android:title="@string/topMenu_filter"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragFilters_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragFilters_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/fragFilters_buttonToggleGroup_sortBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/fragFilters_guideline_right"
+        app:layout_constraintStart_toStartOf="@id/fragFilters_guideline_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:materialThemeOverlay="@style/customOutlinedButton"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragFilters_button_popular"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragFilters_button_popular" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragFilters_button_new"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragFilters_button_new" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragFilters_button_relevant"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragFilters_button_relevant" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <LinearLayout
+        android:id="@+id/fragFilters_linearLayout_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/fragFilters_iconButton_chooseDate"
+        app:layout_constraintEnd_toStartOf="@+id/fragFilters_iconButton_chooseDate"
+        app:layout_constraintStart_toStartOf="@+id/fragFilters_guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/fragFilters_iconButton_chooseDate">
+
+        <TextView
+            android:id="@+id/fragFilters_textView_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragFilters_textView_date"
+            android:textColor="@color/black_1"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/fragFilters_textView_chooseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/fragFilters_textView_chooseDate"
+            android:textColor="@color/gray_3"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragFilters_iconButton_chooseDate"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        app:icon="@drawable/ic_calendar"
+        app:iconTint="@color/gray_4"
+        app:layout_constraintEnd_toEndOf="@+id/fragFilters_guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/fragFilters_buttonToggleGroup_sortBy" />
+
+    <TextView
+        android:id="@+id/fragFilters_textView_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/fragFilters_textView_language"
+        android:textColor="@color/black_1"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/fragFilters_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/fragFilters_linearLayout_date" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragFilters_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/fragFilters_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/fragFilters_textView_language">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/fragFilters_chipGroup_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true" />
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="cornerSizeFiftyPercent">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="customChipFilter" parent="@style/Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color_list</item>
+    </style>
+
+    <style name="customOutlinedButton">
+        <item name="colorSecondaryContainer">@color/blue_1</item>
+    </style>
+
+    <style name="customMaterialCalendar" parent="@style/Widget.Material3.MaterialCalendar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="rangeFillColor">@color/blue_1</item>
+        <item name="materialCalendarHeaderDivider">@style/customHeaderDivider</item>
+    </style>
+    
+    <style name="customMaterialCalendarThemeOverlay" parent="@style/ThemeOverlay.Material3.MaterialCalendar">
+        <item name="android:background">@color/white</item>
+        <item name="colorPrimary">@color/blue_3</item>
+        <item name="materialCalendarStyle">@style/customMaterialCalendar</item>
+        <item name="materialCalendarHeaderToggleButton">@style/customHeaderToggleButton</item>
+    </style>
+
+    <style name="customHeaderDivider" parent="Widget.Material3.MaterialCalendar.HeaderDivider">
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="customHeaderToggleButton" parent="Widget.Material3.MaterialCalendar.HeaderToggleButton">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="customThemeOverlayBottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/customBottomNavigationViewThemeOverlay</item>
+    </style>
+
+    <style name="customBottomNavigationViewThemeOverlay">
+        <item name="colorSurface">@color/black_1</item>
+        <item name="colorOnSurfaceVariant">@color/black_1</item>
+        <item name="colorSecondaryContainer">@color/blue_3</item>
+    </style>
+
+    <style name="customSearchView" parent="Widget.Material3.SearchView">
+        <item name="materialThemeOverlay">@style/customSearchViewThemeOverlay</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="customSearchViewThemeOverlay">
+        <item name="colorSurface">@color/blue_2</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/white</item>
+        <item name="colorOutline">@color/white</item>
+    </style>
+
+    <style name="customToolbar">
+        <item name="materialThemeOverlay">@style/customToolbarThemeOverlay</item>
+    </style>
+
+    <style name="customToolbarThemeOverlay">
+        <item name="colorOnSurfaceVariant">@color/white</item>
+        <item name="colorSurface">@android:color/transparent</item>
+    </style>
+
+    <style name="customTabLayout">
+        <item name="materialThemeOverlay">@style/customTabLayoutThemeOverlay</item>
+        <item name="tabIconTint">@color/gray_4</item>
+    </style>
+
+    <style name="customTabLayoutThemeOverlay">
+        <item name="colorPrimary">@color/blue_4</item>
+    </style>
+
+</resources>

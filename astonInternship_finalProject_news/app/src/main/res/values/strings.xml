@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">News</string>
+
+    <string name="frag_headlines">Headlines</string>
+    <string name="frag_sources">Sources</string>
+    <string name="frag_saved">Saved</string>
+    <string name="frag_filters">Filters</string>
+
+    <string name="topMenu_search">Search</string>
+    <string name="topMenu_filter">Filer</string>
+    <string name="topMenu_checkMark">Check mark</string>
+    <string name="topMenu_not_saved">Save</string>
+    <string name="topMenu_saved">Remove from saved</string>
+
+    <string name="tab_general">General</string>
+    <string name="tab_business">Business</string>
+    <string name="tab_science">Science</string>
+    <string name="tab_health">Health</string>
+    <string name="tab_entertainment">Entertainment</string>
+    <string name="tab_technology">Technology</string>
+    <string name="tab_sport">Sport</string>
+
+    <string name="fragFilters_button_popular">Popular</string>
+    <string name="fragFilters_button_new">New</string>
+    <string name="fragFilters_button_relevant">Relevant</string>
+    <string name="fragFilters_textView_date">Date</string>
+    <string name="fragFilters_textView_language">Language</string>
+    <string name="fragFilters_textView_chooseDate">Choose date</string>
+    <string name="fragFilters_textView_selectDate">Select date</string>
+
+    <string name="fragExceptionHandler_textView_refresh">Refresh</string>
+
+    <string name="errorMessage_noConnection">No internet connection</string>
+    <string name="errorMessage_unknownError">Something went wrong\nTry later</string>
+
+    <string name="fragSavedNews_textView_missingItems">Nothing to show</string>
+
+    <string name="hint_search">Search</string>
+
+    <string name="icon_search_url_template">https://besticon-demo.herokuapp.com/icon?url=%s&amp;size=32..200..200</string>
+</resources>
