@@ -1,6 +1,14 @@
 # Educational Projects
 Some of the projects that I implemented as part of my studies
 
+## astonInternship_finalProject_news
+
+An news app created as part of the intensive.
+The terms of reference set some limitations. The project is written in kotlin + java.
+Implemented a cache (offline operation is available)
+
+https://github.com/RobCapa/educational_projects/assets/67319986/13c71717-e39d-47b6-b123-de6b9f85579c
+
 ## diplom_unsplash
 
 Project based on Unsplash API.
