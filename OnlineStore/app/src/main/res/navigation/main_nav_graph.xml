@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragHome">
+
+    <fragment
+        android:id="@+id/fragCatalog"
+        android:name="com.example.onlinestore.presentation.fragments.catalog.CatalogRootFragment"
+        android:label="CatalogRootFragment"
+        tools:layout="@layout/frag_root_catalog" />
+
+    <fragment
+        android:id="@+id/fragCart"
+        android:name="com.example.onlinestore.presentation.fragments.cart.CartRootFragment"
+        android:label="CartRootFragment"
+        tools:layout="@layout/frag_root_cart" />
+
+    <fragment
+        android:id="@+id/fragHome"
+        android:name="com.example.onlinestore.presentation.fragments.home.HomeRootFragment"
+        android:label="HomeRootFragment"
+        tools:layout="@layout/frag_root_home" />
+
+    <fragment
+        android:id="@+id/fragProfile"
+        android:name="com.example.onlinestore.presentation.fragments.profile.ProfileRootFragment"
+        android:label="ProfileRootFragment"
+        tools:layout="@layout/frag_root_profile" />
+
+    <fragment
+        android:id="@+id/fragPromotions"
+        android:name="com.example.onlinestore.presentation.fragments.promotions.PromotionsRootFragment"
+        android:label="PromotionsRootFragment"
+        tools:layout="@layout/frag_root_promotions" />
+</navigation>

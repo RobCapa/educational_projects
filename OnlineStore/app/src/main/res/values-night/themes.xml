@@ -1,0 +1,37 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OnlineStore" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="accentColor">@color/pink_400</item>
+        <item name="accentColorLight">@color/pink_200</item>
+        <item name="frameBackgroundColor">@color/white</item>
+
+        <item name="BackgroundColor_1">@color/white</item>
+        <item name="BackgroundColor_2">@color/gray_50</item>
+        <item name="BackgroundColor_3">@color/pink_400</item>
+        <item name="BackgroundColor_4">@color/pink_200</item>
+
+        <item name="TextColor_1">@color/pink_400</item>
+        <item name="TextColor_2">@color/pink_200</item>
+        <item name="TextColor_3">@color/orange_500</item>
+        <item name="TextColor_4">@color/white</item>
+        <item name="TextColor_5">@color/gray_500</item>
+        <item name="TextColor_6">@color/gray_800</item>
+        <item name="TextColor_7">@color/black</item>
+
+        <item name="ElementColor_1">@color/pink_400</item>
+        <item name="ElementColor_2">@color/orange_500</item>
+        <item name="ElementColor_3">@color/white</item>
+        <item name="ElementColor_4">@color/gray_300</item>
+        <item name="ElementColor_5">@color/blue_700</item>
+        <item name="ElementColor_6">@color/gray_800</item>
+        <item name="ElementColor_7">@color/black</item>
+
+        <item name="android:windowBackground">?attr/frameBackgroundColor</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:statusBarColor">?attr/frameBackgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="tagChipStyle">@style/TagChip</item>
+    </style>
+</resources>

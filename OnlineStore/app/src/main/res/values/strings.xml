@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="app_name">OnlineStore</string>
+
+    <string name="bottomNavigation_menuItem_home">Главная</string>
+    <string name="bottomNavigation_menuItem_catalog">Каталог</string>
+    <string name="bottomNavigation_menuItem_cart">Корзина</string>
+    <string name="bottomNavigation_menuItem_promotions">Акции</string>
+    <string name="bottomNavigation_menuItem_profile">Профиль</string>
+
+    <string name="pageTitle_registration">Вход</string>
+    <string name="pageTitle_profile">Личный кабинет</string>
+    <string name="pageTitle_catalog">Каталог</string>
+    <string name="pageTitle_favorites">Избранное</string>
+
+    <string name="fragRegistration_hint_firstName">Имя</string>
+    <string name="fragRegistration_hint_lastName">Фамилия</string>
+    <string name="fragRegistration_mask_phoneNumber">+7 ### ###-##-##</string>
+    <string name="fragRegistration_button_log">Войти</string>
+    <string name="fragRegistration_textView_conditions">Нажимая кнопку “Войти”, Вы принимаете\n<u>условия программы лояльности</u></string>
+    <string name="fragRegistration_errorHint_cyrillicOnly">Только кириллица</string>
+
+    <string name="sortStrategy_popularity">По популярности</string>
+    <string name="sortStrategy_priceUp">По возрастанию цены</string>
+    <string name="sortStrategy_priceDown">По уменьшению цены</string>
+
+    <string name="productTag_catalog">Смотреть все</string>
+    <string name="productTag_face">Лицо</string>
+    <string name="productTag_body">Тело</string>
+    <string name="productTag_suntan">Загар</string>
+    <string name="productTag_mask">Маска</string>
+
+    <string name="fragCatalog_textView_filters">Фильтры</string>
+
+    <string name="fragProfile_action_favorites">Избранное</string>
+    <string name="fragProfile_action_shops">Магазины</string>
+    <string name="fragProfile_action_feedback">Обратная связь</string>
+    <string name="fragProfile_action_offer">Оферта</string>
+    <string name="fragProfile_action_productReturn">Возврат товара</string>
+    <string name="fragProfile_action_exit">Выйти</string>
+
+    <string name="fragProfile_pattern1_productCounter">%s товар</string>
+    <string name="fragProfile_pattern2_productCounter">%s товара</string>
+    <string name="fragProfile_pattern3_productCounter">%s товаров</string>
+
+    <string name="fragFavorites_tabTitle_products">Товары</string>
+    <string name="fragFavorites_tabTitle_brands">Бренды</string>
+
+    <string name="fragProductPage_textView_descriptionSection">Описание</string>
+    <string name="fragProductPage_textView_specificationsSection">Характеристики</string>
+    <string name="fragProductPage_textView_compositionSection">Состав</string>
+    <string name="fragProductPage_textView_expandTextView">Подробнее</string>
+    <string name="fragProductPage_textView_collapseTextView">Скрыть</string>
+    <string name="fragProductPage_textView_addToCart">Добавить в корзину</string>
+
+    <string name="fragProductPage_menuItem_share">Поделиться</string>
+
+    <string name="fragProductPage_pattern1_productCounter">Доступно для заказа %s штука</string>
+    <string name="fragProductPage_pattern2_productCounter">Доступно для заказа %s штуки</string>
+    <string name="fragProductPage_pattern3_productCounter">Доступно для заказа %s штук</string>
+
+    <string name="fragProductPage_pattern1_ratingCounter">%s • %s отзыв</string>
+    <string name="fragProductPage_pattern2_ratingCounter">%s • %s отзыва</string>
+    <string name="fragProductPage_pattern3_ratingCounter">%s • %s отзывов</string>
+
+    <string name="pattern_discount">-%s%%</string>
+
+</resources>

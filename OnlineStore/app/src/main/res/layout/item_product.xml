@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomCardView"
+    android:layout_width="match_parent"
+    android:layout_height="287dp"
+    app:strokeColor="?BackgroundColor_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/frameBackgroundColor"
+        android:paddingStart="6dp"
+        android:paddingEnd="8dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fragItemProduct_viewPager_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/fragItemProduct_tabLayout_dots"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/fragItemProduct_viewPager_gallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingEnd="4dp"
+            app:tabPaddingStart="4dp" />
+
+        <ImageView
+            android:id="@+id/fragItemProduct_imageView_like"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_heart_hollow"
+            app:tint="?attr/accentColor" />
+
+        <com.example.onlinestore.presentation.views.StrikethroughTextView
+            android:id="@+id/itemProduct_textView_oldPrice"
+            style="@style/text_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?TextColor_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragItemProduct_viewPager_gallery"
+            tools:text="423 ₽" />
+
+        <TextView
+            android:id="@+id/itemProduct_textView_currentPrice"
+            style="@style/text_title2_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="?TextColor_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemProduct_textView_oldPrice"
+            tools:text="299 ₽" />
+
+        <TextView
+            android:id="@+id/itemProduct_textView_discount"
+            style="@style/text_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="6dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="1dp"
+            android:textColor="?TextColor_4"
+            app:layout_constraintBottom_toBottomOf="@+id/itemProduct_textView_currentPrice"
+            app:layout_constraintStart_toEndOf="@+id/itemProduct_textView_currentPrice"
+            app:layout_constraintTop_toTopOf="@+id/itemProduct_textView_currentPrice"
+            tools:text="-35%" />
+
+        <TextView
+            android:id="@+id/itemProduct_textView_title"
+            style="@style/text_title3_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="?TextColor_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemProduct_textView_currentPrice"
+            tools:text="ESFOLIO" />
+
+        <TextView
+            android:id="@+id/itemProduct_textView_subtitle"
+            style="@style/text_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="3"
+            android:textColor="?TextColor_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemProduct_textView_title"
+            tools:text="Лосьон для тела `ESFOLIO` COENZYME Q10 Увлажняющий 500 мл" />
+
+        <ImageView
+            android:id="@+id/itemProduct_imageView_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:tint="?ElementColor_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemProduct_textView_subtitle"
+            app:srcCompat="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/itemProduct_textView_rating"
+            style="@style/text_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="?TextColor_3"
+            app:layout_constraintBottom_toBottomOf="@+id/itemProduct_imageView_star"
+            app:layout_constraintStart_toEndOf="@+id/itemProduct_imageView_star"
+            app:layout_constraintTop_toTopOf="@+id/itemProduct_imageView_star"
+            tools:text="4.5" />
+
+        <TextView
+            android:id="@+id/itemProduct_textView_feedbackCount"
+            style="@style/text_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:textColor="?TextColor_5"
+            app:layout_constraintBottom_toBottomOf="@+id/itemProduct_textView_rating"
+            app:layout_constraintStart_toEndOf="@+id/itemProduct_textView_rating"
+            app:layout_constraintTop_toTopOf="@+id/itemProduct_textView_rating"
+            tools:text="(61)" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/itemProduct_button_addToCart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="?attr/accentColor"
+        app:icon="@drawable/ic_plus"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="?ElementColor_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</com.google.android.material.card.MaterialCardView>

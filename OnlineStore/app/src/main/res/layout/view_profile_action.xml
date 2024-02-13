@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomCardView"
+    android:layout_width="match_parent"
+    android:layout_height="49dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/viewProfileAction_imageView_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?ElementColor_6"
+            tools:srcCompat="@drawable/ic_heart_hollow" />
+
+        <TextView
+            android:id="@+id/viewProfileAction_textView_title"
+            style="@style/text_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="?TextColor_7"
+            app:layout_constraintBottom_toBottomOf="@+id/viewProfileAction_imageView_icon"
+            app:layout_constraintEnd_toStartOf="@+id/viewProfileAction_imageView_arrow"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/viewProfileAction_imageView_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Избранное" />
+
+        <TextView
+            android:id="@+id/viewProfileAction_textView_additionalInfo"
+            style="@style/text_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?TextColor_5"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/viewProfileAction_textView_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/viewProfileAction_textView_title"
+            app:layout_constraintTop_toBottomOf="@+id/viewProfileAction_textView_title"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="1 товар"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/viewProfileAction_imageView_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right"
+            app:tint="?ElementColor_6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

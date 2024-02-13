@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fragRegistration_appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/fragRegistration_topAppBar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/pageTitle_registration"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragRegistration_textInputLayout_firstName"
+        style="@style/fffTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragRegistration_appBarLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragRegistration_editText_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/fragRegistration_hint_firstName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragRegistration_textInputLayout_lastName"
+        style="@style/fffTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/fragRegistration_textInputLayout_firstName"
+        app:layout_constraintStart_toStartOf="@+id/fragRegistration_textInputLayout_firstName"
+        app:layout_constraintTop_toBottomOf="@+id/fragRegistration_textInputLayout_firstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragRegistration_editText_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/fragRegistration_hint_lastName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragRegistration_textInputLayout_phoneNumber"
+        style="@style/fffTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/fragRegistration_textInputLayout_lastName"
+        app:layout_constraintStart_toStartOf="@+id/fragRegistration_textInputLayout_lastName"
+        app:layout_constraintTop_toBottomOf="@+id/fragRegistration_textInputLayout_lastName">
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/fragRegistration_editText_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="##########"
+            android:inputType="phone"
+            android:typeface="monospace"
+            app:keep_hint="true"
+            mask:allowed_chars="1234567890"
+            mask:mask="@string/fragRegistration_mask_phoneNumber" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/fragRegistration_button_log"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/fragRegistration_button_log"
+        android:textColor="?TextColor_4"
+        app:backgroundTint="@color/button_color_list"
+        app:cornerRadius="8dp"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/fragRegistration_textInputLayout_phoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/fragRegistration_textInputLayout_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fragRegistration_textInputLayout_phoneNumber" />
+
+    <TextView
+        android:id="@+id/fragRegistration_textView_conditions"
+        style="@style/text_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="@string/fragRegistration_textView_conditions"
+        android:textColor="?TextColor_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

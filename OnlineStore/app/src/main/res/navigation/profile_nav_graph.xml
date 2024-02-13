@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.onlinestore.presentation.fragments.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/frag_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.onlinestore.presentation.fragments.favorites.main.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/frag_favourites">
+        <action
+            android:id="@+id/action_favoritesFragment_to_productPageFragment"
+            app:destination="@id/productPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productPageFragment"
+        android:name="com.example.onlinestore.presentation.fragments.product_page.ProductPageFragment"
+        android:label="ProductPageFragment"
+        tools:layout="@layout/frag_product_page">
+        <argument
+            android:name="product"
+            app:argType="com.example.domain.models.Product" />
+    </fragment>
+</navigation>

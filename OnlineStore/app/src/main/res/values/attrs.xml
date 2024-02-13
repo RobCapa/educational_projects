@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="accentColor" format="color" />
+    <attr name="accentColorLight" format="color" />
+    <attr name="frameBackgroundColor" format="color" />
+    <attr name="tagChipStyle" />
+
+    <attr name="BackgroundColor_1" format="color" />
+    <attr name="BackgroundColor_2" format="color" />
+    <attr name="BackgroundColor_3" format="color" />
+    <attr name="BackgroundColor_4" format="color" />
+
+    <attr name="TextColor_1" format="color" />
+    <attr name="TextColor_2" format="color" />
+    <attr name="TextColor_3" format="color" />
+    <attr name="TextColor_4" format="color" />
+    <attr name="TextColor_5" format="color" />
+    <attr name="TextColor_6" format="color" />
+    <attr name="TextColor_7" format="color" />
+
+    <attr name="ElementColor_1" format="color" />
+    <attr name="ElementColor_2" format="color" />
+    <attr name="ElementColor_3" format="color" />
+    <attr name="ElementColor_4" format="color" />
+    <attr name="ElementColor_5" format="color" />
+    <attr name="ElementColor_6" format="color" />
+    <attr name="ElementColor_7" format="color" />
+
+</resources>

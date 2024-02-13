@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragCatalog_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragCatalog_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="16dp" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fragCatalog_appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/fragCatalog_topAppBar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/pageTitle_catalog"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/fragCatalog_imageView_sortingIcon"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintStart_toStartOf="@+id/fragCatalog_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/fragCatalog_appBarLayout"
+        app:srcCompat="@drawable/ic_arrow_reverse" />
+
+    <Spinner
+        android:id="@+id/fragCatalog_spinner_sortingStrategy"
+        android:layout_width="135dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:popupBackground="?BackgroundColor_2"
+        app:layout_constraintBottom_toBottomOf="@+id/fragCatalog_imageView_sortingIcon"
+        app:layout_constraintStart_toEndOf="@+id/fragCatalog_imageView_sortingIcon"
+        app:layout_constraintTop_toBottomOf="@+id/fragCatalog_appBarLayout" />
+
+    <LinearLayout
+        android:id="@+id/fragCatalog_linearLayout_filters"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/fragCatalog_spinner_sortingStrategy"
+        app:layout_constraintEnd_toEndOf="@+id/fragCatalog_guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/fragCatalog_appBarLayout">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_filters"
+            app:tint="?attr/ElementColor_7" />
+
+        <TextView
+            style="@style/text_title4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="end"
+
+            android:text="@string/fragCatalog_textView_filters"
+            android:textColor="?attr/TextColor_6" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/fragCatalog_horizontalScrollView_tags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="@+id/fragCatalog_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/fragCatalog_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/fragCatalog_spinner_sortingStrategy">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/fragCatalog_chipGroup_tags"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragCatalog_recyclerView_products"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragCatalog_horizontalScrollView_tags"
+        tools:listitem="@layout/item_product" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

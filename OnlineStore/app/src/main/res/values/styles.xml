@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TagChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipCornerRadius">100dp</item>
+        <item name="chipBackgroundColor">@color/chip_background_color_list</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="closeIconTint">@color/white</item>
+        <item name="android:textColor">@color/text_tag_chip_color_list</item>
+        <item name="closeIcon">@drawable/ic_cross</item>
+        <item name="closeIconSize">9dp</item>
+        <item name="android:textAppearance">@style/text_title4</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabBackground">@drawable/segment_con</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <style name="fffTextInputLayout">
+        <item name="boxStrokeColor">?attr/accentColorLight</item>
+        <item name="android:textColorHint">@color/gray_500</item>
+        <item name="boxBackgroundColor">@color/gray_50</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconDrawable">@drawable/ic_cross</item>
+    </style>
+
+    <style name="Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/toolbarTitle</item>
+        <item name="android:background">?attr/frameBackgroundColor</item>
+    </style>
+
+    <style name="toolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+
+    </style>
+
+    <style name="CustomCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut
+        </item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/gray_50</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+    </style>
+
+    <style name="ThemeOverlayBottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/BottomNavigationViewThemeOverlay</item>
+    </style>
+
+    <style name="BottomNavigationViewThemeOverlay">
+        <item name="colorSecondaryContainer">@color/transparent</item>
+    </style>
+
+    <!-- Text -->
+
+    <style name="text_largeTitle" parent="text_mediumBase">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="text_button2" parent="text_mediumBase">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_button1" parent="text_mediumBase">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_title3_bold" parent="text_title3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_title2_bold" parent="text_title2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_title1_bold" parent="text_title1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_title4" parent="text_regularBase">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_title3" parent="text_mediumBase">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_title2" parent="text_mediumBase">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_title1" parent="text_mediumBase">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_element" parent="text_regularBase">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text_text" parent="text_regularBase">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_price" parent="text_regularBase">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="text_caption" parent="text_regularBase">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_mediumBase">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="text_regularBase">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragHome"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/bottomNavigation_menuItem_home" />
+    <item
+        android:id="@+id/fragCatalog"
+        android:enabled="true"
+        android:icon="@drawable/ic_catalog"
+        android:title="@string/bottomNavigation_menuItem_catalog" />
+    <item
+        android:id="@+id/fragCart"
+        android:enabled="true"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/bottomNavigation_menuItem_cart" />
+    <item
+        android:id="@+id/fragPromotions"
+        android:enabled="true"
+        android:icon="@drawable/ic_promotions"
+        android:title="@string/bottomNavigation_menuItem_promotions" />
+    <item
+        android:id="@+id/fragProfile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/bottomNavigation_menuItem_profile" />
+</menu>

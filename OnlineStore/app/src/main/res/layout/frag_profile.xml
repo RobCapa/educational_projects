@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragProductPage_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragProductPage_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="16dp" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fragProfile_appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/fragRegistration_topAppBar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/pageTitle_profile"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fragProfile_materialCardView_userInfo"
+        style="@style/CustomCardView"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="?BackgroundColor_2"
+        app:layout_constraintEnd_toEndOf="@+id/fragProductPage_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/fragProductPage_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/fragProfile_appBarLayout"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fragProfile_imageView_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_profile"
+                app:tint="?ElementColor_6" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_userName"
+                style="@style/text_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:textColor="?TextColor_7"
+                app:layout_constraintEnd_toStartOf="@+id/fragProfile_imageView_exitIcon"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/fragProfile_imageView_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Rob Capa" />
+
+            <TextView
+                android:id="@+id/fragProfile_textView_phoneNumber"
+                style="@style/text_caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:textColor="?TextColor_5"
+                app:layout_constraintEnd_toEndOf="@+id/fragProfile_textView_userName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fragProfile_textView_userName"
+                app:layout_constraintTop_toBottomOf="@+id/fragProfile_textView_userName"
+                tools:text="+7 987 654-32-11" />
+
+            <ImageView
+                android:id="@+id/fragProfile_imageView_exitIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_exit"
+                app:tint="?ElementColor_6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:id="@+id/fragProfile_scrollView_actions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragProfile_button_exit"
+        app:layout_constraintEnd_toEndOf="@+id/fragProductPage_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/fragProductPage_guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/fragProfile_materialCardView_userInfo">
+
+        <LinearLayout
+            android:id="@+id/fragProfile_linearLayout_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_profile_action"
+            android:orientation="vertical"
+            android:showDividers="middle" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fragProfile_button_exit"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="32dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:stateListAnimator="@null"
+        android:text="@string/fragProfile_action_exit"
+        android:textColor="?TextColor_7"
+        app:backgroundTint="?BackgroundColor_2"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fragProductPage_guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/fragProductPage_guideline_left" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
